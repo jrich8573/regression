@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+# split the training and testing dataset before the import into R
+# require two user command line inputs
+
+
+input=$1
+output=$2
+
+
+awk 'NR%2==0' $input > $output
